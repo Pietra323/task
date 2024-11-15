@@ -15,7 +15,7 @@ Zadanie polega na stworzeniu aplikacji w Pythonie lub JavaScript, która:
 - OpenAI API
 
 ## Co zostało wykonane
-Wykonane zostały wszystkie obowiązkowe zadania jak i te opcjonalne, program działą zgodnie z wymaganiami oraz oczekiwaniami.
+Wykonane zostały wszystkie obowiązkowe zadania jak i te opcjonalne, program działa zgodnie z wymaganiami oraz oczekiwaniami.
 
 ## Instalacja
 1. Sklonuj repozytorium:

@@ -21,3 +21,18 @@ Wykonane zostały wszystkie obowiązkowe zadania jak i te opcjonalne, program dz
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/Pietra323/task.git
+2. Będąc w domowym folderze "task" wpisz w terminalu:
+   ```bash
+   npm install
+3. Następnie przejdź do folderu "ReactApp" za pomocą:
+   ```bash
+   cd WebApp/ReactApp
+4. Następnie:
+   ```bash
+   npm install
+5. Aby uruchomić obowiązkową część zadania należy w terminalu w katalogu domowym wpisać:
+   ```bash
+   npm start
+6. Aby uruchomić dodatkową część zadania należy w terminalu w katalogu "ReactApp" wpisać:
+   ```bash
+   npm run dev

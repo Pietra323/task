@@ -22,5 +22,5 @@ export async function fetchResponse(articleData) {
     });
     const data = await response.json();
     const htmlContent = data.choices[0].message.content.trim();
-    console.log(htmlContent);
+    console.log(htmlContent)
 }

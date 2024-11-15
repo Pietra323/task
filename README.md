@@ -21,6 +21,7 @@ Wykonane zostały wszystkie obowiązkowe zadania jak i te opcjonalne, program dz
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/Pietra323/task.git
+   
 2. Będąc w domowym folderze "task" wpisz w terminalu:
    ```bash
    npm install

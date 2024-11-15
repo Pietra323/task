@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function generateTemplate() {
     return `
@@ -50,7 +51,7 @@ function App() {
     const [article, setArticle] = useState("");
 
     return (
-        <div>
+        <div id="app">
             <textarea
                 value={article}
                 onChange={(e) => setArticle(e.target.value)}
@@ -59,12 +60,14 @@ function App() {
                 placeholder="Wprowadź artykuł HTML"
             ></textarea>
             <br />
-            <button onClick={() => saveFile("szablon.html", generateTemplate())}>
-                Pobierz szablon
-            </button>
-            <button onClick={() => saveFile("podglad.html", generateFullHTML(article))}>
-                Pobierz podgląd artykułu
-            </button>
+            <div className="button-container">
+                <button onClick={() => saveFile("szablon.html", generateTemplate())}>
+                    Pobierz szablon
+                </button>
+                <button onClick={() => saveFile("podglad.html", generateFullHTML(article))}>
+                    Pobierz podgląd artykułu
+                </button>
+            </div>
         </div>
     );
 }

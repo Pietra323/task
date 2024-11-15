@@ -1,4 +1,6 @@
+import fs from 'fs';
 export async function fetchResponse(articleData) {
+    console.log(process.env.API_KEY);
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -22,5 +24,6 @@ export async function fetchResponse(articleData) {
     });
     const data = await response.json();
     const htmlContent = data.choices[0].message.content.trim();
-    console.log(htmlContent)
+    console.log(htmlContent);
+    fs.writeFileSync("artykul.html", htmlContent, 'utf8');
 }

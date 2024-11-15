@@ -10,7 +10,7 @@ export async function fetchResponse(articleData) {
             messages: [
                 {
                     role: "system",
-                    content: "Przekształć ten artykuł na format HTML. Wygeneruj kod HTML z odpowiednimi tagami do strukturyzacji treści. Dodaj placeholdery dla obrazków z tagiem <img> i atrybutem alt, zawierającym dokładny prompt do generowania grafiki."
+                    content: "Przekształć ten artykuł na format HTML. Wygeneruj kod HTML z odpowiednimi tagami do strukturyzacji treści. Dodaj placeholdery dla obrazków z tagiem <img> i atrybutem alt, zawierającym dokładny prompt do generowania grafiki. Zwrócony kod powinien zawierać wyłącznie zawartość do wstawienia pomiędzy tagami <body> i </body>. Nie dołączaj znaczników <html>, <head> ani <body>."
                 },
                 {
                     role: "user",
